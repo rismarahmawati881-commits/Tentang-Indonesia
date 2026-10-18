@@ -1,0 +1,168 @@
+
+/* 1. Pengaturan dasar website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F5EF;
+    color: #34312F;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+}
+
+/* 2. Bagian header */
+header {
+    padding: 28px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5DED3;
+}
+
+header p:first-child {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+header p:last-child {
+    font-size: 13px;
+    color: #82766D;
+}
+
+/* 3. Bagian utama atau hero */
+main section:first-child {
+    min-height: 75vh;
+    padding: 100px 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #EFE5D8;
+}
+
+main section:first-child p:first-child {
+    color: #A36F72;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    max-width: 850px;
+    font-size: clamp(38px, 6vw, 76px);
+    line-height: 1.15;
+    font-weight: normal;
+    margin-bottom: 28px;
+}
+
+main section:first-child p:last-child {
+    max-width: 600px;
+    color: #665D56;
+    font-size: 17px;
+}
+
+/* 4. Bagian isi tulisan */
+main section:nth-child(2) {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 100px 32px;
+}
+
+h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.3;
+    font-weight: normal;
+    margin-bottom: 28px;
+}
+
+main section:nth-child(2) p {
+    color: #665D56;
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+/* 5. Bagian footer */
+footer {
+    padding: 30px 8%;
+    text-align: center;
+    border-top: 1px solid #E5DED3;
+    color: #82766D;
+    font-size: 13px;
+}
+
+/* 6. Penyesuaian untuk layar HP */
+@media (max-width: 600px) {
+    header {
+        padding: 22px 6%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    main section:first-child {
+        min-height: 65vh;
+        padding: 75px 7%;
+    }
+
+    main section:nth-child(2) {
+        padding: 70px 7%;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+}
+
+/* 7. Bagian kontak */
+#kontak {
+    padding: 90px 12%;
+    background-color: #E8D6D0;
+    text-align: center;
+}
+
+#kontak > p:first-child {
+    color: #925F63;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+}
+
+#kontak h2 {
+    max-width: 700px;
+    margin: 0 auto 24px;
+}
+
+#kontak > p:nth-of-type(2) {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #665D56;
+}
+
+#kontak a {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #34312F;
+    color: #34312F;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+#kontak a:hover {
+    background-color: #34312F;
+    color: #F8F5EF;
+}
